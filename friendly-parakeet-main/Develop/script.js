@@ -1,23 +1,3 @@
-/*
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-*/
-
-// Assignment code here
-
 // creating variables with supported characters for password
 // 0 is for lowercase alphabet
 // 1 is for uppercase alphabet
@@ -37,14 +17,14 @@ function generatePassword() {
   //prompts for length of password and will keep prompting until valid answer is given
   do {
     var passwordLength = prompt("how many characters does this password need to be? Enter an integer between 8 and 128 (8 and 128 are valide values)");
-    passwordLength = Number(passwordLength);
+    passwordLength = Number(passwordLength); // used this to verify if input was a number: https://stackoverflow.com/questions/69355885/what-is-the-best-way-to-validate-if-a-prompt-entry-is-a-number-in-js
     if (passwordLength < 8) {
       alert("That value is too low. Pick again.");
       var validAnswer = false;
     } else if (passwordLength > 128) {
       alert("That value is too high. Pick again.");
       var validAnswer = false;
-    } else if (Number.isNaN(passwordLength)) {
+    } else if (Number.isNaN(passwordLength)) { 
       alert("That is not a number.  Pick again.");
       var validAnswer = false;
     } else {
@@ -99,6 +79,3 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-// used this to verify if input was a number
-// https://stackoverflow.com/questions/69355885/what-is-the-best-way-to-validate-if-a-prompt-entry-is-a-number-in-js
