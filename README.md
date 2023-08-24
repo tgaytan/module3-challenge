@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-1.  Navigate to the following URL to access the password generator site.
+1.  Navigate to the following URL to access the password generator site: https://tgaytan.github.io/module3-challenge/
 2.  Hit the "Generate Password" button.
 3.  You will be presented with the following prompts.  Answer the prompts
     *  how many characters does this password need to be? Enter an integer between 8 and 128 (8 and 128 are valide values)
@@ -33,6 +33,8 @@ NOTE:
 
 I used code from this page to confirm if the user gave an integer when they are prompted to input a number.
 https://stackoverflow.com/questions/69355885/what-is-the-best-way-to-validate-if-a-prompt-entry-is-a-number-in-js
+
+Source code was provided by The University of Texas at Austin online coding boot camp.  The code is included in this repo in the directory named friendly-parakeet-main.
 
 ## License
 
