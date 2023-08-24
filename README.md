@@ -13,6 +13,10 @@ N/A
 
 ## Usage
 
+Here is a screenshot of the web page in GitHub pages
+
+![screenshot of web page after deployment in GitHub pages](./assets/screenshot.png)
+
 1.  Navigate to the following URL to access the password generator site: https://tgaytan.github.io/module3-challenge/
 2.  Hit the "Generate Password" button.
 3.  You will be presented with the following prompts.  Answer the prompts
@@ -22,7 +26,6 @@ N/A
     *  Select OK if you need to include numbers
     *  Select OK if you need to include special characters
 4.  After the prompts have been answered, the password is displayed in the dashed box.  The password can then be copied to your clipboard.
-
 
 NOTE: 
 * For the first prompt in step 3, if a valid value is not provided, you will be prompted again until a valid value is provided.
